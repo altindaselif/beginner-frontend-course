@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Attributes</title>
+  </head>
+  <body>
+    <h1>HTML Attributes</h1>
+
+    <h2>HTML Global Attributes</h2>
+
+    <h3>The <code>class</code> Attribute</h3>
+    <p class="foo bar">
+      CSS ve JavaScript ile etkileşimde bulunması için sınıflandırılmıştır.
+    </p>
+
+    <h3>The <code>contenteditable</code> Attribute</h3>
+
+    <p contenteditable="true">Bu düzenlenebilir bir paragraftır.</p>
+
+    <p>
+      (Web sayfasında kullanıcının düzenleyebildiği bir paragraf oluşturur.)
+    </p>
+
+    <h3>The <code>data-*</code> Attribute</h3>
+
+    <p data-name="John" data-uuid="d05762ee-db2c-4890-98c9-f951cd8d8fbb">
+      Kullanıcı Öğesi
+    </p>
+
+    <p>
+      (Normalde var olmayan attributelar tanımlanmak istendiğinde sistemin hata
+      vermemesi için bu attributeların başına "data-" ifadesi kullanılır.)
+    </p>
+
+    <h3>The <code>dir</code> Attribute</h3>
+    <p dir="rtl">Bu metni sağdan sola doğru yazın!</p>
+
+    <p>(Metnin yazılış yönünü değiştirmek için kullanılır.)</p>
+
+    <h3>The <code>id</code> Attribute</h3>
+    <p id="uniq-id">Benzersiz bir kimliğe sahip paragraf.</p>
+
+    <p>
+      (classtan farklı olarak her sayfada yalnızca bir kez kullanılabilen
+      yapılardır. Unique olması ve sadece tek bir elementte kullanılması
+      gerekir.)
+    </p>
+
+    <h3>The <code>lang</code> Attribute</h3>
+
+    <p lang="en">This is a paragraph.</p>
+
+    <p>(Metnin dilini belirtmek için kullanılır.)</p>
+
+    <h3>The <code>title</code> Attribute</h3>
+
+    <p title="İhtiyacınız olan eğitimler için Patika.dev'i ziyaret edin ">
+      patika.dev
+    </p>
+
+    <p>
+      (Web sayfasında kullanıcı yazının üzerine geldiğinde yazılan açıklama
+      pop-up şeklinde gösterilir.)
+    </p>
+
+    <h3>The <code>translate</code> Attribute</h3>
+    <p translate="no">Don't translate this!</p>
+
+    <p>
+      (Web sayfasında çevrilmemesi istenen metinleri belirtmek için kullanılır.)
+    </p>
+
+    <h2>HTML Attributes</h2>
+
+    <h3>The <code>img</code> Attributes</h3>
+    <img src="./assets/image.jpg" alt="Kız Kulesi" width="300" height="175" />
+
+    <h3>The <code>video</code> Attributes</h3>
+    <video
+      src="./assets/video.mp4"
+      controls
+      autoplay
+      muted
+      loop
+      width="300"
+    ></video>
+    <p>
+      (Kontrol tuşları eklendi, otomatik oynatıldı, sessize alındı, bittikten
+      sonra başa dönmesi sağlandı. Tarayıcı politikaları gereği bir videoda ses
+      açıksa tarayıcı o videoyu otomatik oynatmaz. Özellikle Apple ürünlerinde
+      bu politika uygulanır.)
+    </p>
+  </body>
+</html>

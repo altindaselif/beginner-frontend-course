@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Images</title>
+  </head>
+  <body>
+    <h1>HTML Images</h1>
+
+    <h2>Example</h2>
+    <img src="./assets/image.jpg" />
+
+    <h2>Attributes</h2>
+
+    <h3>The <code>alt</code> Attribute</h3>
+    <img src="./assets/image.jpg" alt="Kız Kulesi" />
+
+    <h3>The <code>width</code> and <code>height</code> Attribute</h3>
+    <img src="./assets/image.jpg" width="450" height="300" />
+
+    <h3>The <code>srcset</code> Attribute</h3>
+    <img
+      src="./assets/image.jpg"
+      srcset="
+        ./assets/image.jpg,
+        ./assets/image@2x.jpg 2x,
+        ./assets/image@3x.jpg 3x
+      "
+    />
+    <p>
+      (Kullanıcı siteye ekran kalitesi yüksek bir cihazdan giriş yapıyorsa
+      mevcut görselin daha kaliteli versiyonunun kullanılması için srcset
+      attributeu kullanılır. Tarayıcı srcset attributeunu gördüğünde ona göre
+      ilgili görseli kendi seçer. Her tarayıcı srcset'i desteklememektedir. O
+      yüzden srcset ile birlikte src de kullanılmalıdır. Mevcut piksel sayısını
+      4 kez sıkıştıran ekranlar olmadığından 3x'ten sonrasını yapmıyoruz.)
+    </p>
+
+    <h3>The <code>loading</code> Attribute</h3>
+    <img src="./assets/image.jpg" loading="lazy" />
+    <p>
+      (Kullanıcı sayfada görselin bulunduğu kısma gelene kadar görsel yüklenmez.
+      Bu sayede sitenin hızlı yüklenmesine katkı sağlanır ve internet
+      kullanımından da tasarruf edilir.)
+    </p>
+
+    <h2>The HTML <code>picture</code> Element</h2>
+    <picture>
+      <source srcset="./assets/image.avif" type="image/avif" width="950" />
+      <source srcset="./assets/image.webp" type="image/webp" width="850" />
+      <source srcset="./assets/image.jpg" type="image/jpeg" width="750" />
+      <img src="./assets/image.jpg" width="650" />
+    </picture>
+
+    <p>
+      (picture elementini modern tarayıcılar desteklerken bazı eski tarayıcılar
+      desteklememektedir. Bu yüzden bu elementin içinde tüm tarayıcıların
+      desteklediği img elementini de kullanmak gerekir. avif ve webp yeni nesil
+      dosya formatlarıdır. Bu formatlar daha düşük boyutta daha yüksek kalitede
+      görsel sıkıştırmasını sağlar. Fakat bu yeni nesil formatlar eski
+      tarayıcılarda çalışmayabilir. Bu yüzden bu formatlar yukarıdaki örnekte
+      olduğu gibi alternatiflerle birlikte kullanılmalıdır. Tarayıcı, yazım
+      sıralamasına göre picture elementindeki alternatiflerden tek bir tanesini
+      gösterir, diğerlerini gözardı eder.)
+    </p>
+  </body>
+</html>

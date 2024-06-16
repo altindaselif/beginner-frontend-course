@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Forms</title>
+  </head>
+  <body>
+    <h1>HTML Forms</h1>
+
+    <p>
+      (HTML form oluşturma, kullanıcıdan bilgi toplamak için kullanılır. Bu
+      bilgiler daha sonra işlenmek üzere bir sunucuya gönderilir. Formlar, metin
+      girişi, seçim kutuları, radyo düğmeleri, onay kutuları ve daha fazlası
+      gibi birçok farklı türde input elementi içerebilir.)
+    </p>
+
+    <p>
+      (Formlar, kullanıcılarla etkileşim kurmanın ve onlardan bilgi toplamanın
+      önemli bir yoludur. Formları çeşitli amaçlar için kullanabilirsiniz,
+      örneğin kullanıcıdan geri bildirim almak, bir anket yapmak veya
+      kullanıcının bir hesap oluşturmasına izin vermek için.)
+    </p>
+
+    <h2>Example</h2>
+    <form>
+      <fieldset>
+        <legend>Kişisel:</legend>
+        <div>
+          <label for="fullname">İsim ve Soyisim:</label>
+          <input type="text" id="fullname" />
+        </div>
+        <div>
+          <label for="gender">Cinsiyet:</label>
+          <input type="radio" name="gender" value="male" />Erkek
+          <input type="radio" name="gender" value="female" />Kadın
+        </div>
+        <div>
+          <label for="birthday">Doğum Tarihi:</label>
+          <input type="date" id="birthday" />
+        </div>
+        <div>
+          <label for="city">Şehir:</label>
+          <select id="city">
+            <option value="">Seçiniz..</option>
+            <optgroup label="Marmara">
+              <option value="istanbul">İstanbul</option>
+              <option value="edirne">Edirne</option>
+            </optgroup>
+            <optgroup label="Ege">
+              <option value="izmir">İzmir</option>
+              <option value="mugla">Muğla</option>
+            </optgroup>
+            <optgroup label="Doğu Anadolu">
+              <option value="kars">Kars</option>
+              <option value="agri">Ağrı</option>
+            </optgroup>
+          </select>
+        </div>
+        <div>
+          <label>Hobiler:</label>
+          <input type="checkbox" name="hobbies[]" value="sport" /> Spor
+          <input type="checkbox" name="hobbies[]" value="music" /> Müzik
+          <input type="checkbox" name="hobbies[]" value="read" /> Okuma
+          <input type="checkbox" name="hobbies[]" value="game" /> Oyun
+        </div>
+        <div>
+          <label for="cv">Özgeçmiş:</label>
+          <input type="file" id="cv" />
+        </div>
+      </fieldset>
+
+      <div>
+        <p>
+          (Bir HTML formu, form elementi ile başlar ve biter. Formun içinde
+          çeşitli input elemanları olabilir.)
+        </p>
+        <p>
+          (Birkaç tane form elementini iç içe koymak ve gruplamak için fieldset
+          elementi kullanılır.)
+        </p>
+        <p>(Başlık koymak için legend elementi kullanılır.)</p>
+        <p>
+          (label elementi input alanının açıklamasını belirler. for attribute'u,
+          label'ın hangi input elementine ait olduğunu belirtir. for
+          attribute'undaki değer hangi input'un id'si ile eşleşiyorsa label o
+          input'a aittir. bir başka deyişle label elementi form elemanları için
+          anlamlı ve erişilebilir bir etiket oluşturur. for özelliği, etiketin
+          hangi form elemanına ait olduğunu belirler.)
+        </p>
+        <p>
+          (input elementi kullanıcının bilgi girebileceği bir alan oluşturur.
+          Bir HTML formunun en temel elemanıdır ve birçok farklı türde veriyi
+          kabul edebilir.)
+        </p>
+        <p>
+          (id attribute'u, input alanının benzersiz tanımlayıcısını belirler.
+          Bu, label ile ilişkilendirme ve CSS/JavaScript ile elementi seçme için
+          kullanılır.)
+        </p>
+        <p>
+          (name attribute'u, input'un form verileri gönderildiğinde kullanılacak
+          ismini belirtir.)
+        </p>
+        <p>
+          (radio butonu kullanıcının birden çok seçenek arasından tek bir
+          seçeneği seçmesini sağlar. radio butonunda sadece tek bir opsiyonu
+          seçilebilir yapmak için opsiyonların name attribute'larının birbiri
+          ile aynı olması gerekiyor.)
+        </p>
+        <p>
+          (select etiketi, bir açılır liste oluşturur. option attribute'u ile
+          birlikte kullanılarak kullanıcının bir veya birden fazla seçenek
+          arasından seçim yapabilmesi sağlanır. Opsiyonları gruplandırmak
+          istiyorsak optgroup elementini kullanıyoruz. option elementinin
+          içindeki value attribute'u back-end'e gönderilecek ya da veri
+          tabanında saklanacak veriyi içerir. Bu yüzden olabildiğince kısa ve öz
+          olmalıdır.)
+        </p>
+        <p>
+          (check box kullanıcının birden çok seçenek arasından bir veya daha
+          fazla seçeneği seçmesini sağlar.)
+        </p>
+      </div>
+
+      <fieldset>
+        <legend>İletişim:</legend>
+        <div>
+          <label for="email">E-Posta:</label>
+          <input type="email" id="email" />
+        </div>
+        <div>
+          <label for="phone">Telefon:</label>
+          <input type="tel" id="phone" />
+        </div>
+        <div>
+          <label for="address">Adres:</label>
+          <textarea id="address" rows="5" cols="50"></textarea>
+        </div>
+      </fieldset>
+
+      <p>
+        (textarea kullanıcının çok satırlı metin girişi yapabileceği bir metin
+        alanı oluşturur. Genellikle kullanıcıdan yorumlar veya diğer uzun form
+        girişleri almak için kullanılır. rows ve cols öznitelikleri ile metin
+        alanının boyutu belirlenebilir.)
+      </p>
+
+      <div>
+        <label for="password">Şifre:</label>
+        <input type="password" id="password" />
+      </div>
+      <div>
+        <button type="submit">Kayıt Ol</button>
+        <button type="reset">Temizle</button>
+      </div>
+      <p>
+        (button etiketi, tıklanabilir bir düğme oluşturur. Formlarda genellikle
+        bir "Gönder" veya "Sıfırla" düğmesi olarak kullanılır, ancak aynı
+        zamanda JavaScript ile birlikte de kullanılabilir.)
+      </p>
+      <p>
+        (submit butonu formu sunucuya göndermek için kullanılır. submit butonunu
+        ekledikten sonra textarea hariç herhangi bir inputtayken enter'a
+        bastığınız zaman form içerisindeki submit butonu otomatik olarak
+        tetiklenir ve formu göndermeye çalışır.)
+      </p>
+      <p>(reset butonu formda girilen tüm bilgileri sıfırlar.)</p>
+      <p>
+        (Her bir form elemanı, name attribute'u ile sunucuya gönderildiğinde
+        tanımlanır. value attribute'u, form elemanının değerini belirler
+        (kullanıcı tarafından girilirse).)
+      </p>
+
+      <p>
+        (Form elemanları genellikle bir form elementi içinde gruplandırılır, bu
+        da genellikle bir action (formun gönderileceği URL) ve method
+        (genellikle "GET" veya "POST") özelliği içerir.)
+      </p>
+
+      <p>
+        (Bu elemanlar ve özellikler, çeşitli form kontrollerini oluşturarak
+        kullanıcılardan giriş almayı mümkün kılar. HTML form elemanlarının doğru
+        kullanımı, kullanıcıların bilgiyi kolayca ve doğru bir şekilde girmesini
+        ve sunucuların bu bilgiyi doğru bir şekilde işlemesini sağlar.)
+      </p>
+      <p>
+        (Bu öznitelikler ve etiketler, kullanıcıdan bilgi almanızı sağlar. Bu
+        bilgiler daha sonra sunucu tarafından işlenir veya istemci tarafında
+        JavaScript kullanılarak işlenir. Form elemanlarının anlaşılması ve
+        etkili bir şekilde kullanılabilmesi, web geliştiricinin sahip olması
+        gereken temel bir beceridir.)
+      </p>
+    </form>
+
+    <h2>HTML Input Types</h2>
+
+    <h3>Input Type Color</h3>
+    <input type="color" />
+
+    <h3>Input Type Number</h3>
+    <input type="number" />
+    <p>
+      (Mobil cihazlarda input text'e bastığınızda tüm klavye açılırken input
+      number'a bastığınızda sadece numaralar açılır.)
+    </p>
+
+    <h3>Input Type Range</h3>
+    <input type="range" />
+
+    <h3>Input Type Time</h3>
+    <input type="time" />
+
+    <h2>HTML Input Attributes</h2>
+
+    <h3>The <code>value</code> Attribute</h3>
+    <input type="text" value="John" />
+    <p>
+      (Input'un içerisine varsayılan bir değer yazmak için value attribute'u
+      kullanılır.)
+    </p>
+
+    <h3>The <code>readonly</code> Attribute</h3>
+    <input type="text" value="Doe" readonly />
+    <p>
+      (Input'un içerisindeki varsayılan değerin değiştirilmesini önlemek için
+      readonly attribute'u kullanılır. Bunun disabled attribute'undan farkı
+      disabled koşullara göre değişebilir, enabled olabilir ve kullanıcı artık
+      veri girişi sağlayabilir)
+    </p>
+
+    <h3>The <code>disabled</code> Attribute</h3>
+    <input type="number" value="28" disabled />
+    <p>
+      (Buraya bir check box ekleyip check box'ın işaretlenmesi durumunda bu
+      kısmı enabled hale getirebilirsiniz.)
+    </p>
+
+    <h3>The <code>placeholder</code> Attribute</h3>
+    <input type="tel" placeholder="500 123 45 67" />
+    <p>
+      (Kullanıcıya ilgili inputta nasıl bir veri girilmesi istendiğini
+      gösterebilmek için kullanılır.)
+    </p>
+
+    <h2>TEMPLATES</h2>
+    <h3>Metin Girişi:</h3>
+    <form>
+      <label for="fname">Ad:</label><br />
+      <input type="text" id="fname" name="fname" /><br />
+      <label for="lname">Soyad:</label><br />
+      <input type="text" id="lname" name="lname" /><br /><br />
+      <input type="submit" value="Gönder" />
+    </form>
+
+    <h3>E-Posta ve Şifre Girişi:</h3>
+    <form>
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" /><br />
+      <label for="pwd">Şifre:</label><br />
+      <input type="password" id="pwd" name="pwd" /><br /><br />
+      <input type="submit" value="Gönder" />
+    </form>
+
+    <h3>Onay Kutusu:</h3>
+    <form>
+      <label for="vehicle1"> Arabam var:</label>
+      <input type="checkbox" id="vehicle1" name="vehicle1" value="Car" /><br />
+      <label for="vehicle2"> Bisikletim var:</label>
+      <input
+        type="checkbox"
+        id="vehicle2"
+        name="vehicle2"
+        value="Bike"
+      /><br /><br />
+      <input type="submit" value="Gönder" />
+    </form>
+
+    <h3>Radyo Düğmeleri:</h3>
+    <form>
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male">Erkek</label><br />
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Kadın</label><br /><br />
+      <input type="submit" value="Gönder" />
+    </form>
+  </body>
+</html>
