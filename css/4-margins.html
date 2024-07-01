@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Margins</title>
+    <style>
+      .c1 {
+        background-color: orange;
+      }
+      .c1 p {
+        background-color: green;
+        margin: 10px;
+      }
+      .c2 {
+        background-color: green;
+      }
+      .c2 p {
+        background-color: orange;
+        margin: 0;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Margins</h1>
+    <h2>margin</h2>
+    <div class="c1">
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio facilis
+        asperiores ex mollitia, quis consectetur maxime nulla quas odit
+        repellendus debitis cupiditate, dicta omnis ea et libero unde,
+        laudantium consequatur.
+      </p>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio facilis
+        asperiores ex mollitia, quis consectetur maxime nulla quas odit
+        repellendus debitis cupiditate, dicta omnis ea et libero unde,
+        laudantium consequatur.
+      </p>
+    </div>
+    <p>
+      ("margin: 10px" dediğimizde yukarıdan, aşağıdan, sağdan ve soldan 10
+      piksel veriyoruz. Fakat tarayıcı ilk elementin üstü ve son elementin
+      altında bir margin oluşturmuyor. Hatta iki element arasında 20 piksel
+      margin oluşması gerekirken 10 piksel margin oluşuyor. Tarayıcı bunu render
+      ederken bilerek yapıyor. İki margin birbirine denk geliyorsa bunlardan
+      sadece birini render ediyor.)
+    </p>
+    <h2>margin-top</h2>
+    <div class="c2">
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio facilis
+        asperiores ex mollitia, quis consectetur maxime nulla quas odit
+        repellendus debitis cupiditate, dicta omnis ea et libero unde,
+        laudantium consequatur.
+      </p>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio facilis
+        asperiores ex mollitia, quis consectetur maxime nulla quas odit
+        repellendus debitis cupiditate, dicta omnis ea et libero unde,
+        laudantium consequatur.
+      </p>
+    </div>
+  </body>
+</html>

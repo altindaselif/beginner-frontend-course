@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Links</title>
+    <style>
+      a {
+        color: fuchsia;
+      }
+      a:visited {
+        color: darksalmon;
+      }
+      a:hover {
+        color: lightgreen;
+      }
+      a:active {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>HTML Links</h1>
+    <h2>Example</h2>
+    <p><a href="https://www.patika.dev">Patika.dev'i ziyaret et</a></p>
+
+    <h2>HTML Links Attributes</h2>
+    <h3>The <code>target</code> Attribute</h3>
+    <p>
+      <a href="https://www.patika.dev" target="_self"
+        >Bağlantıyı mevcut pencere/sekmede aç</a
+      >
+    </p>
+    <p>(target _self olduğunda bağlantı mevcut sekmede açılır)</p>
+    <p>
+      <a href="https://www.patika.dev" target="_blank"
+        >Bağlantıyı yeni pencere/sekmede aç</a
+      >
+    </p>
+    <p>(target _blank olduğunda bağlantı yeni sekmede açılır)</p>
+
+    <h2>Absolute URLs vs. Relative URLs</h2>
+    <h3>Absolute URLs</h3>
+    <p>
+      <a href="https://www.apple.com">Apple</a>
+    </p>
+    <p>
+      <a href="https://www.google.com">Google</a>
+    </p>
+    <p>
+      (Adresi tam olan path name içermeyen URL adresleri Absolute URL olarak
+      adlandırılır)
+    </p>
+
+    <h3>Relative URLs</h3>
+    <p>
+      <a href="./5-links.html">Bağlantılar Sayfası</a>
+    </p>
+    <p>
+      (Path name içeren adresi tam olmayan URL adresleri Relative URL olarak
+      adlandırılır)
+    </p>
+
+    <h2>URI Schema</h2>
+    <p><a href="mailto:ornet@example.com">E-Posta Gönder</a></p>
+    <p><a href="tel:+905001234567">Telefon ile Ara</a></p>
+    <p><a href="sms:+905001234567?body=Merhaba!">SMS Gönder</a></p>
+
+    <h2>Bookmarks</h2>
+    <p><a href="#chapter1">Bölüm 1'e atla</a></p>
+    <p><a href="#chapter2">Bölüm 2'e atla</a></p>
+    <p><a href="#chapter3">Bölüm 3'e atla</a></p>
+
+    <p>
+      Mevcut sayfa içerisinde geçişleri ve tarayıcının sayfayı kaydırmasını
+      sağlamak için kullanılır. Burada #chapter1 ifadesi başka bir elementin
+      id'sini temsil ediyor. Buradaki ifade başka bir elementin id'si ile
+      eşleşiyorsa tarayıcı sizin için o elementi sol üstte hizalıyor.
+    </p>
+
+    <h3 id="chapter1">Bölüm 1</h3>
+    <p>
+      Ad elit voluptate excepteur ullamco aute Lorem adipisicing adipisicing
+      esse officia culpa. Fugiat laboris dolore irure do incididunt ipsum
+      consectetur ad sit esse mollit sint ut fugiat. Qui laborum fugiat eiusmod
+      nisi veniam. Aliqua pariatur nisi elit eiusmod. Non ea elit non nostrud
+      consectetur nisi incididunt.
+    </p>
+
+    <p>
+      Nisi consectetur aliquip eu duis exercitation officia pariatur consectetur
+      cupidatat fugiat. Laborum consequat sunt in laboris sunt sit ut nostrud
+      mollit labore tempor. Aute ea ad officia aliquip exercitation aute labore
+      sit qui labore commodo nostrud irure veniam. Irure consequat ipsum
+      occaecat ullamco fugiat qui enim reprehenderit amet officia elit
+      incididunt. Elit dolore sint mollit nulla duis et ut commodo.
+    </p>
+
+    <p>
+      Lorem enim enim dolor irure ex labore voluptate ad. Veniam consequat in
+      incididunt est reprehenderit quis laborum sit laborum. Nostrud nulla
+      nostrud excepteur cillum irure magna do do cillum et mollit veniam
+      commodo. Laborum duis ea aliquip enim reprehenderit ad ipsum eu cillum
+      pariatur occaecat eu consequat. Aute consequat magna id excepteur veniam
+      minim aute minim aliqua id eu non sit elit.
+    </p>
+
+    <p>
+      In sint ex veniam id et minim. Reprehenderit sint ex nisi reprehenderit
+      Lorem non aliquip. Exercitation mollit velit exercitation sit anim nulla
+      ut. Labore veniam cillum cupidatat dolore labore nisi magna ea voluptate
+      aliqua ullamco veniam culpa. Nostrud nulla exercitation cupidatat dolor
+      officia irure dolor proident nulla non nulla deserunt magna. Sint velit
+      voluptate consequat laborum. Ipsum mollit ipsum eiusmod aliqua enim duis
+      cillum minim.
+    </p>
+
+    <p>
+      Anim officia laboris pariatur incididunt sunt in duis pariatur sit. Magna
+      pariatur aliquip excepteur reprehenderit. Et nulla excepteur in dolore qui
+      quis dolore ex. Minim fugiat elit nulla amet consequat adipisicing.
+    </p>
+    <h3 id="chapter2">Bölüm 2</h3>
+    <p>
+      Ad elit voluptate excepteur ullamco aute Lorem adipisicing adipisicing
+      esse officia culpa. Fugiat laboris dolore irure do incididunt ipsum
+      consectetur ad sit esse mollit sint ut fugiat. Qui laborum fugiat eiusmod
+      nisi veniam. Aliqua pariatur nisi elit eiusmod. Non ea elit non nostrud
+      consectetur nisi incididunt.
+    </p>
+
+    <p>
+      Nisi consectetur aliquip eu duis exercitation officia pariatur consectetur
+      cupidatat fugiat. Laborum consequat sunt in laboris sunt sit ut nostrud
+      mollit labore tempor. Aute ea ad officia aliquip exercitation aute labore
+      sit qui labore commodo nostrud irure veniam. Irure consequat ipsum
+      occaecat ullamco fugiat qui enim reprehenderit amet officia elit
+      incididunt. Elit dolore sint mollit nulla duis et ut commodo.
+    </p>
+
+    <p>
+      Lorem enim enim dolor irure ex labore voluptate ad. Veniam consequat in
+      incididunt est reprehenderit quis laborum sit laborum. Nostrud nulla
+      nostrud excepteur cillum irure magna do do cillum et mollit veniam
+      commodo. Laborum duis ea aliquip enim reprehenderit ad ipsum eu cillum
+      pariatur occaecat eu consequat. Aute consequat magna id excepteur veniam
+      minim aute minim aliqua id eu non sit elit.
+    </p>
+
+    <p>
+      In sint ex veniam id et minim. Reprehenderit sint ex nisi reprehenderit
+      Lorem non aliquip. Exercitation mollit velit exercitation sit anim nulla
+      ut. Labore veniam cillum cupidatat dolore labore nisi magna ea voluptate
+      aliqua ullamco veniam culpa. Nostrud nulla exercitation cupidatat dolor
+      officia irure dolor proident nulla non nulla deserunt magna. Sint velit
+      voluptate consequat laborum. Ipsum mollit ipsum eiusmod aliqua enim duis
+      cillum minim.
+    </p>
+
+    <p>
+      Anim officia laboris pariatur incididunt sunt in duis pariatur sit. Magna
+      pariatur aliquip excepteur reprehenderit. Et nulla excepteur in dolore qui
+      quis dolore ex. Minim fugiat elit nulla amet consequat adipisicing.
+    </p>
+    <h3 id="chapter3">Bölüm 3</h3>
+    <p>
+      Ad elit voluptate excepteur ullamco aute Lorem adipisicing adipisicing
+      esse officia culpa. Fugiat laboris dolore irure do incididunt ipsum
+      consectetur ad sit esse mollit sint ut fugiat. Qui laborum fugiat eiusmod
+      nisi veniam. Aliqua pariatur nisi elit eiusmod. Non ea elit non nostrud
+      consectetur nisi incididunt.
+    </p>
+
+    <p>
+      Nisi consectetur aliquip eu duis exercitation officia pariatur consectetur
+      cupidatat fugiat. Laborum consequat sunt in laboris sunt sit ut nostrud
+      mollit labore tempor. Aute ea ad officia aliquip exercitation aute labore
+      sit qui labore commodo nostrud irure veniam. Irure consequat ipsum
+      occaecat ullamco fugiat qui enim reprehenderit amet officia elit
+      incididunt. Elit dolore sint mollit nulla duis et ut commodo.
+    </p>
+
+    <p>
+      Lorem enim enim dolor irure ex labore voluptate ad. Veniam consequat in
+      incididunt est reprehenderit quis laborum sit laborum. Nostrud nulla
+      nostrud excepteur cillum irure magna do do cillum et mollit veniam
+      commodo. Laborum duis ea aliquip enim reprehenderit ad ipsum eu cillum
+      pariatur occaecat eu consequat. Aute consequat magna id excepteur veniam
+      minim aute minim aliqua id eu non sit elit.
+    </p>
+
+    <p>
+      In sint ex veniam id et minim. Reprehenderit sint ex nisi reprehenderit
+      Lorem non aliquip. Exercitation mollit velit exercitation sit anim nulla
+      ut. Labore veniam cillum cupidatat dolore labore nisi magna ea voluptate
+      aliqua ullamco veniam culpa. Nostrud nulla exercitation cupidatat dolor
+      officia irure dolor proident nulla non nulla deserunt magna. Sint velit
+      voluptate consequat laborum. Ipsum mollit ipsum eiusmod aliqua enim duis
+      cillum minim.
+    </p>
+
+    <p>
+      Anim officia laboris pariatur incididunt sunt in duis pariatur sit. Magna
+      pariatur aliquip excepteur reprehenderit. Et nulla excepteur in dolore qui
+      quis dolore ex. Minim fugiat elit nulla amet consequat adipisicing.
+    </p>
+  </body>
+</html>

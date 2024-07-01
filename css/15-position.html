@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Layout: Position</title>
+    <style>
+      .position {
+        border: 4px solid peru;
+        background-color: white;
+      }
+      .position.relative {
+        position: relative;
+      }
+      .position.absolute {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
+      .position.sticky {
+        position: sticky;
+        top: 0;
+        left: 0;
+        border-color: hotpink;
+      }
+      .position.fixed {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 200px;
+        border-color: chartreuse;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Layout: Position</h1>
+    <h2>position: static</h2>
+    <div class="position">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel incidunt
+        hic dolor, enim adipisci explicabo quia, eligendi aliquam eum fugiat
+        dignissimos aliquid nostrum laudantium eius! Temporibus repellendus
+        similique eos tempore?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos alias
+        repellendus minima temporibus rem odit et! Porro nisi sapiente dolorem
+        reprehenderit suscipit animi, illo veniam omnis? Quaerat vitae eveniet
+        dicta.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa modi
+        ducimus, commodi velit ipsum officia? Dolorum ipsam maxime ratione dolor
+        hic, fugit quidem porro excepturi voluptates, nihil obcaecati accusamus
+        necessitatibus.
+      </p>
+    </div>
+    <p>
+      ("position: static" standart default element pozisyonudur. "position:
+      static" olan bir element herhangi bir absolute elementin referansı
+      olamaz.)
+    </p>
+
+    <h2>position: relative</h2>
+    <div class="position relative">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel incidunt
+        hic dolor, enim adipisci explicabo quia, eligendi aliquam eum fugiat
+        dignissimos aliquid nostrum laudantium eius! Temporibus repellendus
+        similique eos tempore?
+      </p>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam
+        assumenda, commodi delectus quisquam sit ea recusandae voluptate
+        accusantium odit veniam natus enim provident sint dolorum laudantium
+        officia ad molestiae cupiditate?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+        neque quas hic ab, reprehenderit unde nisi veritatis, veniam, doloribus
+        distinctio modi. Deserunt, soluta eveniet. Suscipit placeat explicabo
+        itaque eos cumque!
+      </p>
+    </div>
+
+    <h2>position: absolute</h2>
+    <div class="position relative">
+      <div class="position absolute">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum expedita
+          mollitia tempore similique, nesciunt molestiae suscipit, cum
+          temporibus iusto beatae ipsa? Nam pariatur possimus excepturi
+          temporibus delectus quasi, repellendus veniam!
+        </p>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br />
+    <p>
+      (Bu örnekte içerideki element absolute olduğu için bağımsız hareket eder
+      ve bir üst div'inde relative elementi varsa referansını relative
+      elementinden alır. Ayrıca absolute elementler yüksekliklerini bir üst
+      elemente yansıtamazlar. Yani absolute elementin yüksekliği bağlı olduğu
+      relative elementinin yüksekliğini etkilemez.)
+    </p>
+
+    <h2>position: sticky</h2>
+    <div class="position sticky">
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum expedita
+        mollitia tempore similique, nesciunt molestiae suscipit, cum temporibus
+        iusto beatae ipsa? Nam pariatur possimus excepturi temporibus delectus
+        quasi, repellendus veniam!
+      </p>
+    </div>
+    <p>
+      ("position:sticky" özelliği hangi elementte kullanılırsa sayfada aşağı
+      scroll yaparken o element viewport'un en üstüne geldiğinde oraya yapışır
+      ve viewport'tan çıkmaz.)
+    </p>
+
+    <h2>position: fixed</h2>
+    <div class="position fixed">Bu bir sabit öğedir.</div>
+    <p>
+      ("position:fixed" özelliğini nereye eklediğinizin hiçbir önemi yok,
+      herhangi bir elementi referans almaz. Eklediğiniz yerde referans aldığı
+      tek yer tarayıcınızın penceresidir.)
+    </p>
+
+    <div style="height: 10vh"></div>
+    <p>
+      Ut ullamco mollit dolor ex esse sunt do eiusmod. Do minim magna anim quis
+      ipsum esse fugiat sit ut Lorem tempor et officia. Incididunt exercitation
+      incididunt ex ex proident. Reprehenderit ipsum aliqua veniam culpa nulla
+      Lorem deserunt qui pariatur adipisicing. Dolor do cupidatat quis voluptate
+      sit nisi. Aliquip consectetur amet esse consequat sit fugiat aliqua
+      voluptate.
+    </p>
+    <p>
+      Velit aliquip ullamco est ipsum culpa laboris fugiat. Pariatur sit nostrud
+      consectetur et deserunt occaecat ut nulla. Anim exercitation quis dolore
+      voluptate ea proident excepteur voluptate officia occaecat nulla cillum
+      cillum aute. Ullamco quis exercitation mollit cupidatat adipisicing ex.
+      Occaecat exercitation est ipsum velit id sunt ea laborum do.
+    </p>
+    <p>
+      Incididunt ad ea ut anim sunt dolore anim. Cillum duis laborum laborum
+      duis irure. Nulla culpa nostrud non id laborum et commodo sit cillum
+      tempor consequat. Sit nostrud nostrud duis aliqua sunt id cupidatat culpa
+      nostrud ipsum occaecat elit. Irure ea ut fugiat labore cupidatat eu. Sit
+      amet laborum tempor sit.
+    </p>
+    <p>
+      Do laborum voluptate minim tempor exercitation ut ea eu magna. Anim
+      commodo in tempor minim et eu. Lorem anim esse laborum duis do. Voluptate
+      labore velit voluptate laboris eu do elit veniam nulla non excepteur.
+    </p>
+    <p>
+      Laboris aute ullamco voluptate cupidatat sunt qui ea exercitation. Esse
+      ipsum nisi ipsum excepteur exercitation mollit enim fugiat irure ullamco.
+      Eiusmod qui minim labore velit fugiat ut est incididunt consequat ipsum
+      reprehenderit elit dolore. Deserunt velit magna deserunt tempor in et
+      voluptate. In reprehenderit laboris ea et voluptate aute minim.
+    </p>
+    <p>
+      Occaecat voluptate elit laboris enim Lorem voluptate id velit sint
+      adipisicing ullamco. Reprehenderit est cupidatat amet ut cupidatat ad
+      aliquip ut pariatur tempor. Duis cupidatat nulla sunt aute aliquip in ea
+      Lorem enim.
+    </p>
+    <p>
+      Deserunt ea amet enim id aliqua ad nostrud non id duis est aute Lorem. Eu
+      labore ullamco veniam aute consectetur laborum. Reprehenderit deserunt
+      sunt duis sit consectetur mollit incididunt ipsum. Excepteur consectetur
+      sit veniam laboris irure ipsum elit incididunt adipisicing eu. Pariatur
+      sunt id ad dolore laboris et. Dolore labore aliquip incididunt id
+      excepteur tempor elit consequat cillum sit.
+    </p>
+    <p>
+      Quis est ullamco labore amet tempor magna anim laborum commodo esse
+      voluptate ad enim. Sint consectetur amet tempor pariatur labore cupidatat
+      fugiat reprehenderit. Duis nostrud ad qui ullamco consequat duis magna.
+      Fugiat nulla dolor laborum excepteur aliqua deserunt ad Lorem. Laborum
+      irure pariatur labore aliquip voluptate deserunt fugiat duis nulla. Elit
+      minim voluptate exercitation et qui minim ad commodo ea.
+    </p>
+    <p>
+      Aliquip veniam eiusmod anim occaecat dolor fugiat cillum fugiat dolore
+      aliqua. Fugiat voluptate officia dolor commodo mollit sunt commodo in
+      exercitation. Sint qui minim pariatur in ut ullamco esse amet pariatur
+      ipsum ut.
+    </p>
+    <p>
+      Deserunt commodo ullamco id proident pariatur qui ipsum excepteur. Aliqua
+      est ipsum ullamco consequat. Anim nostrud et ea anim magna fugiat in ex
+      velit sint velit magna est sint. Ut ipsum proident reprehenderit magna
+      labore fugiat occaecat officia quis esse. Officia anim ipsum nulla anim
+      excepteur cupidatat mollit anim. Excepteur labore labore ut deserunt
+      mollit officia elit excepteur amet sint voluptate aute in. Irure aute anim
+      eu nulla voluptate ut est est in eu.
+    </p>
+    <p>
+      Ut ullamco mollit dolor ex esse sunt do eiusmod. Do minim magna anim quis
+      ipsum esse fugiat sit ut Lorem tempor et officia. Incididunt exercitation
+      incididunt ex ex proident. Reprehenderit ipsum aliqua veniam culpa nulla
+      Lorem deserunt qui pariatur adipisicing. Dolor do cupidatat quis voluptate
+      sit nisi. Aliquip consectetur amet esse consequat sit fugiat aliqua
+      voluptate.
+    </p>
+    <p>
+      Velit aliquip ullamco est ipsum culpa laboris fugiat. Pariatur sit nostrud
+      consectetur et deserunt occaecat ut nulla. Anim exercitation quis dolore
+      voluptate ea proident excepteur voluptate officia occaecat nulla cillum
+      cillum aute. Ullamco quis exercitation mollit cupidatat adipisicing ex.
+      Occaecat exercitation est ipsum velit id sunt ea laborum do.
+    </p>
+    <p>
+      Incididunt ad ea ut anim sunt dolore anim. Cillum duis laborum laborum
+      duis irure. Nulla culpa nostrud non id laborum et commodo sit cillum
+      tempor consequat. Sit nostrud nostrud duis aliqua sunt id cupidatat culpa
+      nostrud ipsum occaecat elit. Irure ea ut fugiat labore cupidatat eu. Sit
+      amet laborum tempor sit.
+    </p>
+    <p>
+      Do laborum voluptate minim tempor exercitation ut ea eu magna. Anim
+      commodo in tempor minim et eu. Lorem anim esse laborum duis do. Voluptate
+      labore velit voluptate laboris eu do elit veniam nulla non excepteur.
+    </p>
+    <p>
+      Laboris aute ullamco voluptate cupidatat sunt qui ea exercitation. Esse
+      ipsum nisi ipsum excepteur exercitation mollit enim fugiat irure ullamco.
+      Eiusmod qui minim labore velit fugiat ut est incididunt consequat ipsum
+      reprehenderit elit dolore. Deserunt velit magna deserunt tempor in et
+      voluptate. In reprehenderit laboris ea et voluptate aute minim.
+    </p>
+    <p>
+      Occaecat voluptate elit laboris enim Lorem voluptate id velit sint
+      adipisicing ullamco. Reprehenderit est cupidatat amet ut cupidatat ad
+      aliquip ut pariatur tempor. Duis cupidatat nulla sunt aute aliquip in ea
+      Lorem enim.
+    </p>
+    <p>
+      Deserunt ea amet enim id aliqua ad nostrud non id duis est aute Lorem. Eu
+      labore ullamco veniam aute consectetur laborum. Reprehenderit deserunt
+      sunt duis sit consectetur mollit incididunt ipsum. Excepteur consectetur
+      sit veniam laboris irure ipsum elit incididunt adipisicing eu. Pariatur
+      sunt id ad dolore laboris et. Dolore labore aliquip incididunt id
+      excepteur tempor elit consequat cillum sit.
+    </p>
+    <p>
+      Quis est ullamco labore amet tempor magna anim laborum commodo esse
+      voluptate ad enim. Sint consectetur amet tempor pariatur labore cupidatat
+      fugiat reprehenderit. Duis nostrud ad qui ullamco consequat duis magna.
+      Fugiat nulla dolor laborum excepteur aliqua deserunt ad Lorem. Laborum
+      irure pariatur labore aliquip voluptate deserunt fugiat duis nulla. Elit
+      minim voluptate exercitation et qui minim ad commodo ea.
+    </p>
+    <p>
+      Aliquip veniam eiusmod anim occaecat dolor fugiat cillum fugiat dolore
+      aliqua. Fugiat voluptate officia dolor commodo mollit sunt commodo in
+      exercitation. Sint qui minim pariatur in ut ullamco esse amet pariatur
+      ipsum ut.
+    </p>
+    <p>
+      Deserunt commodo ullamco id proident pariatur qui ipsum excepteur. Aliqua
+      est ipsum ullamco consequat. Anim nostrud et ea anim magna fugiat in ex
+      velit sint velit magna est sint. Ut ipsum proident reprehenderit magna
+      labore fugiat occaecat officia quis esse. Officia anim ipsum nulla anim
+      excepteur cupidatat mollit anim. Excepteur labore labore ut deserunt
+      mollit officia elit excepteur amet sint voluptate aute in. Irure aute anim
+      eu nulla voluptate ut est est in eu.
+    </p>
+  </body>
+</html>

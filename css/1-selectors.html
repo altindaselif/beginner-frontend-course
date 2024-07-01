@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors</title>
+    <style>
+      .c1 {
+        padding-left: 8px;
+        border-left: 5px solid orange;
+      }
+      .c2.c3 {
+        padding-left: 8px;
+        border-left: 5px solid orange;
+      }
+      .c4 .c5 {
+        padding: 1px 3px;
+        border: 3px solid orange;
+      }
+      #paragraph {
+        padding-left: 8px;
+        border-left: 5px solid orange;
+      }
+      p.c6 {
+        padding-left: 8px;
+        border-left: 5px solid orange;
+      }
+      p > mark {
+        padding: 1px 3px;
+        border: 3px solid orange;
+      }
+      [href="https://patika.dev"]
+      {
+        padding-left: 8px;
+        border-left: 5px solid orange;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Selectors</h1>
+    <h2>.class</h2>
+    <p class="c1">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum totam
+      adipisci ipsa a possimus! Non eius eum, molestias aspernatur totam
+      dolorem! Asperiores officia esse ducimus nihil dolorum error nemo
+      repellendus.
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem
+      veniam iusto distinctio suscipit temporibus maxime? Soluta odit minus, at
+      omnis nihil dignissimos rerum vitae quaerat distinctio amet voluptatibus,
+      officia non!
+    </p>
+
+    <h2>.class1.class2</h2>
+    <p class="c2 c3">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, molestias
+      repellendus similique temporibus nihil eaque cumque, unde suscipit
+      eligendi nobis iusto aspernatur ipsa repudiandae porro ad dolore veritatis
+      architecto magnam?
+    </p>
+    <p class="c2">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores
+      cumque maxime officiis, quasi cum obcaecati veritatis ullam dolores unde
+      fugit pariatur! Nostrum delectus, dolores fugit placeat voluptate incidunt
+      porro nam?
+    </p>
+    <p>
+      (Bu ifade c2 ve c3 class'larına sahip elementin stilini değiştirmek için
+      kullanılır.)
+    </p>
+    <h2>.class1 .class2</h2>
+    <p class="c4">
+      Lorem ipsum <span class="c5">dolor sit amet</span> consectetur adipisicing
+      elit. Nisi odio aliquid laboriosam facilis dolore at neque facere pariatur
+      ex! Incidunt ut aperiam eius ipsam a minima tempore suscipit voluptatum.
+      Ex.
+    </p>
+    <p>
+      (Bu ifade c4 class'ına sahip element içindeki c5 class'ına sahip elementin
+      stilini değiştirmek için kullanılır.)
+    </p>
+    <h2>#id</h2>
+    <p id="paragraph">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa asperiores,
+      dignissimos similique nobis praesentium illo fuga perspiciatis neque
+      eligendi officiis eius iste tempore, culpa doloribus unde eos quos sunt
+      quam!
+    </p>
+    <h2>element.class2</h2>
+    <p class="c6">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque odit nam
+      incidunt non ad illum aut ab porro enim ullam exercitationem quia ipsum
+      dolore vero, recusandae tenetur cupiditate necessitatibus eius.
+    </p>
+    <p>
+      (Bu ifade c6 class'ına sahip paragraf elementinin stilini değiştirmek için
+      kullanılır.)
+    </p>
+    <h2>element>element</h2>
+    <p>
+      Lorem ipsum <mark>dolor sit amet</mark> consectetur adipisicing elit.
+      Eligendi unde nisi accusantium iste libero! Magni ex accusantium quidem
+      facere eligendi dolores saepe architecto, nisi qui inventore iure
+      necessitatibus laudantium odit?
+    </p>
+    <p>
+      Lorem ipsum <span><mark>dolor sit amet</mark></span> consectetur
+      adipisicing elit. Eligendi unde nisi accusantium iste libero! Magni ex
+      accusantium quidem facere eligendi dolores saepe architecto, nisi qui
+      inventore iure necessitatibus laudantium odit?
+    </p>
+    <p>
+      (Bu ifadede ortada büyüktür işareti olduğunda ilk elementin hemen altında,
+      çocukları arasında ikinci element varsa ikinci elementin stili
+      değiştirilebilir. Yukarıda ilk örnek bu koşulu sağlamaktadır. Fakat ikinci
+      örnekte çocuklar arasında span elementi vardır. Bu yüzden koşul
+      sağlanamamaktadır.)
+    </p>
+    <p>
+      (Bu ifadede ortada büyüktür işareti olmadığında arada span elementi olsa
+      da stil değiştirme sağlanabilir.)
+    </p>
+    <h2>[attribut="value"]</h2>
+    <p><a href="https://patika.dev">Patika</a></p>
+    <p><a href="https://apple.com">Apple</a></p>
+  </body>
+</html>

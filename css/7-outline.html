@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Outline</title>
+    <style>
+      p {
+        outline-width: 5px;
+        outline-color: orange;
+        outline-offset: 2px;
+        /* border: 10px solid gray; */
+      }
+
+      .c1 {
+        outline-style: dotted;
+      }
+
+      .c2 {
+        outline-style: dashed;
+      }
+
+      .c3 {
+        outline-style: solid;
+      }
+
+      .c4 {
+        outline-style: double;
+      }
+
+      .c5 {
+        outline: 5px dotted red;
+      }
+
+      .c6 {
+        outline: 5px dotted red;
+        outline-offset: -5px;
+        border: 1px solid red;
+        /* "outline-offset: 10px" ifadesi content'in border'ından ne kadar uzağa gidileceğini ölçüsüdür. Bu örnekte border'dan 10 piksel dışa gidilir. 0 piksel olsaydı outline direkt border'ın üzerinde olurdu. -10 piksel olsaydı border'dan 10 piksel içeri gidilirdi. */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Outline</h1>
+    <h2>outline</h2>
+    <p class="c5">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis laudantium
+      sit repellat itaque molestiae perferendis earum hic tenetur adipisci
+      similique deleniti, officiis eius ipsum ab, autem modi fugit dolores
+      velit?
+    </p>
+    <h2>outline-style</h2>
+    <h3>dotted</h3>
+    <p class="c1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quos
+      nulla quibusdam totam aperiam explicabo iste! Maiores reprehenderit
+      eveniet, voluptatibus blanditiis voluptate expedita veniam dolorum, minus,
+      similique veritatis illo explicabo.
+    </p>
+    <h3>dashed</h3>
+    <p class="c2">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
+      suscipit nisi vel illo aspernatur. Beatae obcaecati porro nesciunt illo
+      eveniet aliquam aspernatur. Eius eveniet veritatis quaerat aspernatur rem
+      culpa ex.
+    </p>
+    <h3>solid</h3>
+    <p class="c3">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ex! Cum
+      mollitia eveniet quam tempore modi accusamus autem est sint perspiciatis
+      non odio, dolore iusto beatae nesciunt consectetur? Praesentium, incidunt?
+    </p>
+    <h3>double</h3>
+    <p class="c4">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, ratione.
+      Modi aut dolorem, ex delectus sequi sit ducimus excepturi ratione. Quae
+      voluptatibus odit nihil fugiat, libero aut quis quas neque.
+    </p>
+    <h2>outline-offset</h2>
+    <p class="c6">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus sunt
+      aut quos voluptatibus ipsum iusto? Hic provident consequatur reiciendis
+      delectus rem non? Cupiditate impedit quibusdam ducimus. Iusto distinctio
+      nulla earum.
+    </p>
+  </body>
+</html>

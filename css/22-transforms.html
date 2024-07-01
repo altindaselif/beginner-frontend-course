@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Transforms</title>
+    <style>
+      body {
+        padding: 50px;
+      }
+      .transform {
+        width: 120px;
+        height: 120px;
+        background-color: royalblue;
+      }
+      .translate {
+        transform: translate(20px, 20px);
+      }
+      .scale {
+        transform: scale(1.5, 1);
+      }
+      .rotate {
+        transform: rotate(45deg);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Transforms</h1>
+    <h2>The translate() Method</h2>
+    <div class="transform translate"></div>
+    <br />
+    <p>
+      (Elementin çevresindeki elementleri etkilemeden kaymasını istiyorsanız
+      "transform: translate()" özelliğini kullanabilirsiniz. Bunun yerine margin
+      kullansaydık ilgili elementin kaymasından aşağısındaki element de
+      etkilenecekti ve o da kayacaktı.)
+    </p>
+    <h2>The scale() Method</h2>
+    <div class="transform scale"></div>
+    <p>
+      (Elementleri ölçeklendirmek için "transform: scale() özelliği kullanılır.
+      Bu örnekteki elementin genişliği 1.5 katına çıkmıştır.")
+    </p>
+    <h2>The rotate() Method</h2>
+    <div class="transform rotate"></div>
+  </body>
+</html>
